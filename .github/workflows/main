@@ -1,0 +1,39 @@
+    function itsALuigi (){
+    let luigiBoy = true;
+    if (luigiBoy == true) {
+      console.log("I'm-a Luigi!");
+      }
+    }
+
+  function itsAWaluigi (){
+    let luigiBoy = false;
+    if (luigiBoy == false) {
+      console.log("WAH!");
+    }
+  }
+
+  function itsASuperpositionOfBoth (){
+      console.log("What cruel god allowed this?")
+                  ("You should not be here, child.")
+                  ("Flee, before He sees.");
+    }
+
+function boyPicker(){
+  return Math.round ( Math.random() * 1 );
+}
+
+function whoIsIt() {
+switch(boyPicker()){
+  case 0:
+  itsALuigi();
+  break;
+  case 1:
+  itsAWaluigi();
+  break;
+  case 2:
+  itsASuperpositionOfBoth();
+  break;
+  }
+}
+
+whoIsIt();
